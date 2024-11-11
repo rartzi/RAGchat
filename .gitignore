@@ -1,0 +1,10 @@
+# Ignore environment variable files
+.env
+.env.*
+
+# Ignore Visual Studio Code settings
+.vscode/
+
+# Ignore database and data 
+db
+.db.*
