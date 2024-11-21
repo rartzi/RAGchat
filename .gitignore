@@ -1,10 +1,50 @@
+# Python Tools for Visual Studio (PTVS)
+__pycache__/
+*.pyc
+
+# VS Code files for those working on multiple tools
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+# Code backups
+code_backups
+code_backups.*
+# Local History for Visual Studio Code
+.history/
 # Ignore environment variable files
 .env
 .env.*
+config/.env
 
 # Ignore Visual Studio Code settings
 .vscode/
 
 # Ignore database and data 
 db
-.db.*
+db.*
+dbbackup
+dbbackup.*
+
+vector-store
+vector-store.*
+vector_databases
+vector_databases.*
+
+
+# Ignore Documents Folders
+document-backup
+document-backup.*
+
+documents
+documents.*
+document_rag_chat
+document_rag_chat.*
+documents-backlog
+documents-backlog.*
+
+#Ignore local tests
+tests
+tests.*                                     
