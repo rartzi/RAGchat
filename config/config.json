@@ -1,0 +1,77 @@
+{
+  "vector_db_root": "./vector_databases",
+  "default_docs_dir": "./documents",
+  "max_context_length": 10,
+  "temperature": 0.2,
+  "rag_chat_app": {
+    "app_title": "RAG Knowledge DBs Manager - Hello World",
+    "images": {
+      "logo_path": "assets/logo.png",
+      "description_path": "assets/description.png",
+      "user_avatar_path": "assets/user_avatar.png",
+      "assistant_avatar_path": "assets/assistant_avatar.png"
+    },
+    "sidebar": {
+      "title": "RAG Chat Assistant",
+      "logo_path": "assets/logo.png",
+      "description": "Welcome to our RAG-powered chat assistant. This tool allows you to interact with our document knowledge base using state-of-the-art language models.",
+      "footer": "Powered by Azure OpenAI"
+    }
+
+  },
+  "providers": {
+    "azure": {
+      "enabled": true,
+      "display_name": "Azure OpenAI",
+      "order": 1,
+      "default": true,
+      "description": "Azure OpenAI Service"
+    },
+    "openai": {
+      "enabled": false,
+      "display_name": "OpenAI",
+      "order": 2,
+      "default": false,
+      "description": "OpenAI API"
+    },
+    "ollama": {
+      "enabled": false,
+      "display_name": "Ollama",
+      "order": 3,
+      "default": false,
+      "description": "Local Ollama Models"
+    }
+  },
+  "ollama_models": {
+    "chat": {
+      "llama2": "llama2",
+      "mistral": "mistral",
+      "llama3.1": "llama3.1"
+    },
+    "embedding": {
+      "nomic-embed-text": "nomic-embed-text"
+    }
+  },
+  "openai_models": {
+    "chat": {
+      "gpt-4o": "gpt-4o",
+      "gpt-4o-mini": "gpt-4o-mini",
+      "gpt-3.5-turbo": "gpt-35-turbo"
+    },
+    "embedding": {
+      "text-embedding-3-large": "text-embedding-3-large",
+      "text-embedding-ada-002": "text-embedding-ada-002"
+    }
+  },
+  "azure_openai_models": {
+    "embedding": {
+      "text-embedding-ada-002": "text-embedding-ada-002",
+      "text-embedding-3-large": "text-embedding-3-large"
+    }
+  },
+  "default_azure_deployments": {
+    "gpt-4o": "gpt-4o",
+    "gpt-4o-mini": "gpt-4o-mini",
+    "gpt-35-turbo": "gpt-35-turbo"
+  }
+}
